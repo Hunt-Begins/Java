@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class maxof3 {
+    public static void main(String args[])
+    {
+        int a,b,c;
+
+        System.out.println("enter a");
+        Scanner ob=new Scanner(System.in);
+        a=ob.nextInt();
+
+        System.out.println("enter b");
+        Scanner ob1=new Scanner(System.in);
+        b=ob1.nextInt();
+
+        System.out.println("Enter c");
+        Scanner ob2=new Scanner(System.in);
+        c=ob2.nextInt();
+
+        if (a>b)
+        {
+            if (a>c)
+                System.out.println("max of 3 is "+ a);
+            else
+                System.out.println("max of 3 is "+ c);
+        }
+        else
+        {
+            if (b>c)
+                System.out.println("max of 3 is "+ b);
+            else
+                System.out.println("max of 3 is "+ c);
+        }
+    }
+}
